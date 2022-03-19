@@ -1,0 +1,16 @@
+program AbstractFactoryEx;
+
+uses
+  Vcl.Forms,
+  MainForm in 'MainForm.pas' {Form1},
+  ConcreteFactory in 'Factory\ConcreteFactory.pas',
+  AbstractFactory in 'Factory\AbstractFactory.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

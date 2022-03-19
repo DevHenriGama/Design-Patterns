@@ -1,0 +1,43 @@
+unit ConcreteProduct2;
+
+interface
+
+uses AbstractProduct, System.UITypes;
+
+type
+    TProduct2 = class (TInterfacedObject, AbstractProduct2)
+
+    private
+
+    public
+       function Color1 : TColor;
+       function Color2 : TColor;
+      constructor Create;
+      destructor Destroy;override;
+    end;
+implementation
+
+{ TProduct2 }
+
+function TProduct2.Color1: TColor;
+begin
+ Result := $00404040;
+end;
+
+function TProduct2.Color2: TColor;
+begin
+ Result := $00121520;
+end;
+
+constructor TProduct2.Create;
+begin
+
+end;
+
+destructor TProduct2.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

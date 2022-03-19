@@ -1,0 +1,13 @@
+unit AbstractFactory;
+
+interface
+
+type
+    AbstractFactory = interface
+    ['{528DB6F4-AF55-4D46-891F-415B1DC4CBAA}']
+
+    end;
+
+implementation
+
+end.

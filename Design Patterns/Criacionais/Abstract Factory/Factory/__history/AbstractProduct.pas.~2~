@@ -1,0 +1,20 @@
+unit AbstractProduct;
+
+interface
+
+uses ConcreteProduct1, ConcreteProduct2;
+
+type
+    AbstracProduct1 = interface
+      ['{294FD2E4-8478-4BEE-87D6-278BBFC17A90}']
+
+     end;
+
+     AbstractProduct2 = interface
+       ['{BE0AD090-6B8E-4FBF-84C7-FCFDD8CCD05E}']
+       function Product2 : TProduct2;
+     end;
+
+implementation
+
+end.

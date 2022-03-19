@@ -1,0 +1,39 @@
+unit ConcreteFactory;
+
+interface
+
+uses AbstractFactory, AbstractProduct;
+
+type
+    TConcreteFactory = class (TInterfacedObject, IAbstractFactory )
+
+    private
+
+    public
+      function Factory : AbstracProduct;
+      constructor Create;
+      destructor Destroy;override;
+    end;
+implementation
+
+{ TConcreteFactory }
+
+
+
+constructor TConcreteFactory.Create;
+begin
+
+end;
+
+destructor TConcreteFactory.Destroy;
+begin
+
+  inherited;
+end;
+
+function TConcreteFactory.Factory: AbstracProduct;
+begin
+ Result
+end;
+
+end.

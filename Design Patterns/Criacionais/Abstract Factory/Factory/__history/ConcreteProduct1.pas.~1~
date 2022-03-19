@@ -1,0 +1,30 @@
+unit ConcreteProduct1;
+
+interface
+
+
+type
+    TProduct1 = class (TInterfacedObject, IMyClass)
+
+    private
+
+    public
+      constructor Create;
+      destructor Destroy;override;
+    end;
+implementation
+
+{ TProduct1 }
+
+constructor TProduct1.Create;
+begin
+
+end;
+
+destructor TProduct1.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

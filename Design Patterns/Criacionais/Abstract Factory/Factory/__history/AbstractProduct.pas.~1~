@@ -1,0 +1,13 @@
+unit AbstractProduct;
+
+interface
+
+type
+    AbstracProduct = interface
+      ['{294FD2E4-8478-4BEE-87D6-278BBFC17A90}']
+
+    end;
+
+implementation
+
+end.

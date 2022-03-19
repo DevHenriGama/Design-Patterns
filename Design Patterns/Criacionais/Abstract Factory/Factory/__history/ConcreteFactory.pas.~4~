@@ -1,0 +1,45 @@
+unit ConcreteFactory;
+
+interface
+
+uses AbstractFactory, AbstractProduct, ConcreteProduct2, ConcreteProduct1;
+
+type
+    TConcreteFactory = class (TInterfacedObject, IAbstractFactory )
+
+    private
+
+    public
+      function CreatePanel : AbstracProduct1;
+      function CreateEdit : AbstractProduct2;
+      constructor Create;
+      destructor Destroy;override;
+    end;
+implementation
+
+{ TConcreteFactory }
+
+
+
+constructor TConcreteFactory.Create;
+begin
+
+end;
+
+function TConcreteFactory.CreateEdit: AbstractProduct2;
+begin
+ Result := TProduct1.Create;
+end;
+
+function TConcreteFactory.CreatePanel: AbstracProduct1;
+begin
+ Result := TProduct2.Create;
+end;
+
+destructor TConcreteFactory.Destroy;
+begin
+
+  inherited;
+end;
+
+end.
