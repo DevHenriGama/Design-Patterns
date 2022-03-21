@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/13 11:52:42.000.290,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 19:48:15.000.175,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/30 11:41:50.000.636,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/09/07 10:38:49.000.063,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/09/07 10:56:07.000.105,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/01 18:57:12.000.671,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/08 12:49:17.000.725,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/11/08 20:42:52.000.775,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 06:23:19.604,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:04:37.435,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/03/21 07:10:18.202,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\IBuilder.pas=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/03/21 07:10:35.447,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Client.dfm=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/21 07:10:35.447,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Client.pas=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:10:40.923,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\BuilderEx.dproj=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/03/21 07:10:50.582,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:14:39.585,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\ConcreteBuilderASCII.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:14:51.148,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:16:51.102,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\ConcreteBuilderTeX.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:16:55.628,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:18:54.318,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\ConcreteBuilderTextParagraph.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:21:48.005,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:38:52.316,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+    <Transaction>2022/03/21 07:41:39.862,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Product.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Criacionais\Builder\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
