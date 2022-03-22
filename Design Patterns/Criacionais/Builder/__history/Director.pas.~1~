@@ -1,0 +1,33 @@
+unit Director;
+
+interface
+
+uses IBuilder;
+
+type
+  TDirector = class
+  private
+   FBuilder : ITextConvertBuilder;
+  public
+    constructor Create(Builder : ITextConvertBuilder);
+    destructor Destroy; override;
+
+
+  end;
+
+implementation
+
+{ TDirector }
+
+constructor TDirector.Create(Builder: ITextConvertBuilder);
+begin
+ FBuilder := Builder;
+end;
+
+destructor TDirector.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

@@ -1,14 +1,17 @@
 unit IBuilder;
 
 interface
-  type
-    ITextConvertBuilder = interface
-      ['{65200D1E-978A-472F-B6D9-2EB88B3F9256}']
-      function ConvertChar(val : char) : char;
-      function ConvertFontChange(font : string) : string;
-      function ConvertParagraph(para : String) : String;
-      function GetConvert : ITextConvertBuilder;
-    end;
+
+uses Product;
+
+type
+  ITextConvertBuilder = interface
+    ['{65200D1E-978A-472F-B6D9-2EB88B3F9256}']
+    procedure ConvertChar(val: char);
+    procedure ConvertFontChange(font: string);
+    procedure ConvertParagraph(para: String);
+    function GetConvert: TProduct;
+  end;
 
 implementation
 

@@ -3,37 +3,58 @@ unit ConcreteBuilderTextParagraph;
 
 interface
 
-uses IBuilder;
+uses IBuilder, Product;
 
 type
   TBuilderTexWidget = class(TInterfacedObject, ITextConvertBuilder)
+  private
+    FProduct: TProduct;
   public
-    function ConvertChar(val: char): char;
-    function ConvertFontChange(font: string): string;
-    function ConvertParagraph(para: String): String;
+    constructor Create;
+    destructor Destroy; override;
+    procedure ConvertChar(val: char);
+    procedure ConvertFontChange(font: string);
+    procedure ConvertParagraph(para: String);
+    function GetConvert: TProduct;
   end;
-
 
 implementation
 
 { TBuilderTexWidget }
 
-function TBuilderTexWidget.ConvertChar(val: char): char;
+procedure TBuilderTexWidget.ConvertChar(val: char);
 begin
-// Process convert
-Result := 'C';
+  // Process convertion
+ FProduct.AddPart('C');
 end;
 
-function TBuilderTexWidget.ConvertFontChange(font: string): string;
+procedure TBuilderTexWidget.ConvertFontChange(font: string);
 begin
-//Process convert
-Result := 'TextWidget Font';
+  // Process convertion
+ FProduct.AddPart('TexWidget Font');
 end;
 
-function TBuilderTexWidget.ConvertParagraph(para: String): String;
+procedure TBuilderTexWidget.ConvertParagraph(para: String);
 begin
-//process convert
-Result := 'TextWidget Paragraph';
+  // Process convertion
+  FProduct.AddPart('TexWidget Paragraph');
 end;
+
+constructor TBuilderTexWidget.Create;
+begin
+ FProduct := TProduct.Create;
+end;
+
+destructor TBuilderTexWidget.Destroy;
+begin
+    FProduct.Free;
+  inherited;
+end;
+
+function TBuilderTexWidget.GetConvert: TProduct;
+begin
+Result := FProduct;
+end;
+
 
 end.

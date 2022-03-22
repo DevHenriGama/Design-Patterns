@@ -7,7 +7,8 @@ uses
   ConcreteBuilderASCII in 'ConcreteBuilderASCII.pas',
   ConcreteBuilderTeX in 'ConcreteBuilderTeX.pas',
   ConcreteBuilderTextParagraph in 'ConcreteBuilderTextParagraph.pas',
-  Product in 'Product.pas';
+  Product in 'Product.pas',
+  Director in 'Director.pas';
 
 {$R *.res}
 

@@ -2,36 +2,58 @@ unit ConcreteBuilderTeX;
 
 interface
 
-uses IBuilder;
+uses IBuilder, Product;
 
 type
   TBuilderTeX = class(TInterfacedObject, ITextConvertBuilder)
+  private
+    FProduct: TProduct;
   public
-    function ConvertChar(val: char): char;
-    function ConvertFontChange(font: string): string;
-    function ConvertParagraph(para: String): String;
+    constructor Create;
+    destructor Destroy; override;
+    procedure ConvertChar(val: char);
+    procedure ConvertFontChange(font: string);
+    procedure ConvertParagraph(para: String);
+    function GetConvert: TProduct;
   end;
 
 implementation
 
 { TBuilderTeX }
 
-function TBuilderTeX.ConvertChar(val: char): char;
+procedure TBuilderTeX.ConvertChar(val: char);
 begin
-//process convert
- Result := 'B';
+  // Process convertion
+ FProduct.AddPart('B');
 end;
 
-function TBuilderTeX.ConvertFontChange(font: string): string;
+procedure TBuilderTeX.ConvertFontChange(font: string);
 begin
-//process convert
-Result := 'Font TeX';
+  // Process convertion
+ FProduct.AddPart('TeX Font');
 end;
 
-function TBuilderTeX.ConvertParagraph(para: String): String;
+procedure TBuilderTeX.ConvertParagraph(para: String);
 begin
-//process convert
-Result := 'TeX Paragraph';
+  // Process convertion
+  FProduct.AddPart('TeX Paragraph');
 end;
+
+constructor TBuilderTeX.Create;
+begin
+ FProduct := TProduct.Create;
+end;
+
+destructor TBuilderTeX.Destroy;
+begin
+    FProduct.Free;
+  inherited;
+end;
+
+function TBuilderTeX.GetConvert: TProduct;
+begin
+Result := FProduct;
+end;
+
 
 end.

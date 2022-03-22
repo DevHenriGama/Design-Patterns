@@ -2,37 +2,57 @@ unit ConcreteBuilderASCII;
 
 interface
 
-uses IBuilder;
+uses IBuilder, Product;
 
 type
   TBuilderASCII = class(TInterfacedObject, ITextConvertBuilder)
+  private
+    FProduct: TProduct;
   public
-    function ConvertChar(val: char): char;
-    function ConvertFontChange(font: string): string;
-    function ConvertParagraph(para: String): String;
+    constructor Create;
+    destructor Destroy; override;
+    procedure ConvertChar(val: char);
+    procedure ConvertFontChange(font: string);
+    procedure ConvertParagraph(para: String);
+    function GetConvert: TProduct;
   end;
 
 implementation
 
 { TBuilderASCII }
 
-function TBuilderASCII.ConvertChar(val: char): char;
+procedure TBuilderASCII.ConvertChar(val: char);
 begin
   // Process convertion
-  Result := 'A';
+ FProduct.AddPart('A');
 end;
 
-function TBuilderASCII.ConvertFontChange(font: string): string;
+procedure TBuilderASCII.ConvertFontChange(font: string);
 begin
   // Process convertion
-  Result := 'ASCII Font'
+ FProduct.AddPart('ASCII Font');
 end;
 
-function TBuilderASCII.ConvertParagraph(para: String): String;
+procedure TBuilderASCII.ConvertParagraph(para: String);
 begin
   // Process convertion
-  Result := 'ASCII Paragraph';
+  FProduct.AddPart('ASCII Paragraph');
 end;
 
+constructor TBuilderASCII.Create;
+begin
+ FProduct := TProduct.Create;
+end;
+
+destructor TBuilderASCII.Destroy;
+begin
+    FProduct.Free;
+  inherited;
+end;
+
+function TBuilderASCII.GetConvert: TProduct;
+begin
+Result := FProduct;
+end;
 
 end.

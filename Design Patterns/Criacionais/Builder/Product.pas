@@ -13,6 +13,7 @@ type
       constructor Create;
       destructor Destroy;override;
       procedure AddPart(val : String);
+      function GetProductBuilded : TStringList;
   end;
 
 implementation
@@ -33,6 +34,11 @@ destructor TProduct.Destroy;
 begin
   FProduct.Free;
   inherited;
+end;
+
+function TProduct.GetProductBuilded: TStringList;
+begin
+ Result := FProduct;
 end;
 
 end.
