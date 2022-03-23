@@ -1,0 +1,11 @@
+unit Creator;
+
+interface
+  type
+  ICreator = Interface
+    ['{F3A9795C-05A7-4A2E-80EC-7A406EBBC483}']
+  End;
+
+implementation
+
+end.

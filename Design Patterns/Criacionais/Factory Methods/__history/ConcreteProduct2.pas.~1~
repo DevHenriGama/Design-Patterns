@@ -1,0 +1,14 @@
+unit ConcreteProduct2;
+
+interface
+
+  type
+    TProduct2 = class(TInterfacedObject, IProduct2)
+      private
+
+      public
+    end;
+
+implementation
+
+end.

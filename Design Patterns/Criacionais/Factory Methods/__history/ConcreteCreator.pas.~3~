@@ -1,0 +1,25 @@
+unit ConcreteCreator;
+
+interface
+
+uses Creator, Product, ConcreteProduct;
+
+type
+  TCreator = class(TInterfacedObject, ICreator)
+  private
+
+  public
+
+    function GetUserDate: IProduct;
+  end;
+
+implementation
+
+{ TCreator }
+
+function TCreator.GetUserDate: IProduct;
+begin
+ Result := TProduct.Create;
+end;
+
+end.

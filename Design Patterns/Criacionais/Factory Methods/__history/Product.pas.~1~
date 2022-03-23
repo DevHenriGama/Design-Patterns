@@ -1,0 +1,12 @@
+unit Product;
+
+interface
+
+  type
+    IProduct = interface
+      ['{F48D6586-D007-411E-94B8-E856576BF94B}']
+    end;
+
+implementation
+
+end.

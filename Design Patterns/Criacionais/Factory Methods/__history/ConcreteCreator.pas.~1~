@@ -1,0 +1,11 @@
+unit ConcreteCreator;
+
+interface
+  type
+    TCreator = class(TInterfacedObject, ICreator)
+
+    end;
+
+implementation
+
+end.
