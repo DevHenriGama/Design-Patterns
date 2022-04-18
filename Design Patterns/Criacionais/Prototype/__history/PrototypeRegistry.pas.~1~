@@ -1,0 +1,17 @@
+unit PrototypeRegistry;
+
+interface
+
+uses
+  System.Generics.Collections;
+  type
+    TPrototypeRegistry = class
+      private
+        ListPrototypes : TObjectList;
+      public
+
+    end;
+
+implementation
+
+end.

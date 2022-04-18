@@ -1,0 +1,37 @@
+unit PrototypeRegistry;
+
+interface
+ uses ConcretePrototype, System.Generics.Collections;
+  type
+    TProtList = TObjectList<TConcretePrototype>;
+    TPrototypeRegistry = class
+      private
+        List : TObjectList<TConcretePrototype>;
+      public
+         function Clone(Index : Integer) : TConcretePrototype;
+         procedure AddPrototype( Prototype : TConcretePrototype);
+         function GetList : TProtList;
+    end;
+
+implementation
+
+
+
+{ TPrototypeRegistry }
+
+procedure TPrototypeRegistry.AddPrototype(Prototype: TConcretePrototype);
+begin
+  List.Add(Prototype);
+end;
+
+function TPrototypeRegistry.Clone(Index: Integer): TConcretePrototype;
+begin
+ Result := List[Index];
+end;
+
+function TPrototypeRegistry.GetList: TProtList;
+begin
+ Result := List;
+end;
+
+end.

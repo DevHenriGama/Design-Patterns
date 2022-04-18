@@ -1,0 +1,54 @@
+unit uClient;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,ConcretePrototype;
+
+type
+  TfMain = class(TForm)
+    Exibir: TButton;
+    Memo1: TMemo;
+    Button1: TButton;
+    Edit1: TEdit;
+    procedure ExibirClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+    MainObj, CloneObj : TConcretePrototype;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  fMain: TfMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfMain.Button1Click(Sender: TObject);
+begin
+CloneObj.Name := Edit1.Text;
+Memo1.Lines.Add(CloneObj.Name);
+Memo1.Lines.Add(CloneObj.Whois);
+Memo1.Lines.Add(IntToStr(CloneObj.ID));
+end;
+
+procedure TfMain.ExibirClick(Sender: TObject);
+Begin
+Memo1.Lines.Add(MainObj.Name);
+Memo1.Lines.Add(MainObj.Whois);
+Memo1.Lines.Add(IntToStr(MainObj.ID));
+end;
+
+procedure TfMain.FormCreate(Sender: TObject);
+begin
+    MainObj := TConcretePrototype.Create;
+  CloneObj := MainObj.Clone;
+end;
+
+end.

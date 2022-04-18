@@ -1,0 +1,30 @@
+unit ConcretePrototype;
+
+interface
+
+uses Prototype;
+
+  type
+    TConcretePrototype = class(TInterfacedObject,iPrototype)
+    private
+
+    public
+      function Clone : iPrototype;
+      function Whois : String;
+    end;
+
+implementation
+
+{ ConcretePrototype }
+
+function TConcretePrototype.Clone: iPrototype;
+begin
+ Result := Self;
+end;
+
+function TConcretePrototype.Whois: String;
+begin
+ Result := 'Iam Base Prototype';
+end;
+
+end.

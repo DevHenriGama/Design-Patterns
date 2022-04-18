@@ -1,0 +1,17 @@
+unit PrototypeRegistry;
+
+interface
+ uses ConcretePrototype;
+  type
+    TPrototypeRegistry = class
+      private
+        ListPrototype : Array of TConcretePrototype;
+      public
+
+    end;
+
+implementation
+
+
+
+end.

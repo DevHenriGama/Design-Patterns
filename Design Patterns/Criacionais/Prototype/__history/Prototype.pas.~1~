@@ -1,0 +1,12 @@
+unit Prototype;
+
+interface
+
+type
+  iPrototype = interface
+    ['{FB0D824E-7D6C-4485-A5A9-CF79FF30DDA2}']
+  end;
+
+implementation
+
+end.
