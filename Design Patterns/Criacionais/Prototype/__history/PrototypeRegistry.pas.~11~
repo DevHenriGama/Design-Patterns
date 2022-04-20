@@ -52,7 +52,7 @@ var ListNumber : TStringList;
 begin
   ListNumber := TStringList.Create;
   try
-    for I := 0 to List.Count -1   do begin
+    for I := 0 to List.Count  do begin
       ListNumber.Add(IntToStr(I));
     end;
     Result := ListNumber;

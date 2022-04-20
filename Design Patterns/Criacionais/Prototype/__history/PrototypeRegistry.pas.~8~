@@ -6,7 +6,7 @@ interface
     TPrototypeRegistry = class
       private
         List : TObjectList<TConcretePrototype>;
-        public
+      public
         constructor Create;
         destructor Destroy;override;
          function Clone(Index : Integer) : TConcretePrototype;
@@ -25,7 +25,7 @@ uses
 
 procedure TPrototypeRegistry.AddPrototype(Prototype: TConcretePrototype);
 begin
-  List.Add(Prototype.Create);
+  List.Add(Prototype);
 end;
 
 function TPrototypeRegistry.Clone(Index: Integer): TConcretePrototype;
@@ -37,12 +37,12 @@ end;
 
 constructor TPrototypeRegistry.Create;
 begin
-  List := TObjectList<TConcretePrototype>.Create;
+
 end;
 
 destructor TPrototypeRegistry.Destroy;
 begin
-   List.Free;
+
   inherited;
 end;
 
@@ -52,12 +52,12 @@ var ListNumber : TStringList;
 begin
   ListNumber := TStringList.Create;
   try
-    for I := 0 to List.Count -1   do begin
-      ListNumber.Add(IntToStr(I));
+    for I := 0 to List.Count do begin
+      ListNumber[I] := IntToStr(I);
     end;
     Result := ListNumber;
   finally
-    //ListNumber.Free;
+    ListNumber.Free;
   end;
 end;
 
