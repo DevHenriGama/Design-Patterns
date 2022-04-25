@@ -52,12 +52,12 @@ var ListNumber : TStringList;
 begin
   ListNumber := TStringList.Create;
   try
-    for I := 0 to List.Count -1   do begin
-      ListNumber.Add(IntToStr(I));
+    for I := 0 to List.Count do begin
+      ListNumber[I] := IntToStr(I);
     end;
     Result := ListNumber;
   finally
-    //ListNumber.Free;
+    ListNumber.Free;
   end;
 end;
 

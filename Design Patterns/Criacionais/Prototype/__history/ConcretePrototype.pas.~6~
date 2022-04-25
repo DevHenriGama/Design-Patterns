@@ -19,7 +19,6 @@ interface
      property Whois : String read FWhois write SetWhois;
      property ID : Integer read FID write SetID;
      property Name : String read FName write SetName;
-     procedure Initialize;
 
     end;
 
@@ -41,20 +40,15 @@ end;
 
 constructor TConcretePrototype.Create;
 begin
-
+ FName := 'Henrique';
+ FWhois := 'Director';
+ FID  := 1;
 end;
 
 destructor TConcretePrototype.Destroy;
 begin
 
   inherited;
-end;
-
-procedure TConcretePrototype.Initialize;
-begin
- FName := 'Henrique';
- FWhois := 'Director';
- FID  := 1;
 end;
 
 procedure TConcretePrototype.SetID(const Value: Integer);
