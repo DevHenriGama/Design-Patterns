@@ -1,0 +1,56 @@
+unit Main.Client;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, ConcretePrototype,
+  PrototypeRegistry;
+
+type
+  TuClient = class(TForm)
+    Memo1: TMemo;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Edit1: TEdit;
+    ListBox1: TListBox;
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+    MainObj : TConcretePrototype;
+    CloneObj : TConcretePrototype;
+    RegistryProt : TPrototypeRegistry;
+  public
+    { Public declarations }
+  end;
+
+var
+  uClient: TuClient;
+
+implementation
+
+{$R *.dfm}
+
+procedure TuClient.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+ MainObj.Free;
+ RegistryProt.Free;
+
+ if Assigned(CloneObj) then
+  CloneObj.Free;
+
+end;
+
+procedure TuClient.FormCreate(Sender: TObject);
+begin
+  ReportMemoryLeaksOnShutdown := True;
+ RegistryProt := TPrototypeRegistry.Create;
+ MainObj := TConcretePrototype.Create;
+
+end;
+
+end.

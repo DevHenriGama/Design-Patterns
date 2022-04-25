@@ -6,6 +6,7 @@ interface
     TPrototypeRegistry = class
       private
         List : TObjectList<TConcretePrototype>;
+         ListNumber : TStringList;
         public
         constructor Create;
         destructor Destroy;override;
@@ -38,27 +39,24 @@ end;
 constructor TPrototypeRegistry.Create;
 begin
   List := TObjectList<TConcretePrototype>.Create;
+  ListNumber := TStringList.Create;
 end;
 
 destructor TPrototypeRegistry.Destroy;
 begin
-   List.Free;
   inherited;
+  List.Free;
+  ListNumber.Free;
 end;
 
 function TPrototypeRegistry.GetList: TStringList;
-var ListNumber : TStringList;
+var
   I: Integer;
 begin
-  ListNumber := TStringList.Create;
-  try
     for I := 0 to List.Count -1   do begin
       ListNumber.Add(IntToStr(I));
     end;
     Result := ListNumber;
-  finally
-    //ListNumber.Free;
-  end;
 end;
 
 end.

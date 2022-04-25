@@ -1,9 +1,9 @@
 object NewForm: TNewForm
   Left = 0
   Top = 0
-  Caption = 'NewForm'
-  ClientHeight = 236
-  ClientWidth = 424
+  Caption = 'New Form'
+  ClientHeight = 150
+  ClientWidth = 489
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,56 +13,51 @@ object NewForm: TNewForm
   PixelsPerInch = 96
   TextHeight = 15
   object Button1: TButton
-    Left = 160
-    Top = 7
-    Width = 145
+    Left = 8
+    Top = 8
+    Width = 105
     Height = 25
     Caption = 'Instance Singleton'
     TabOrder = 0
-  end
-  object Edit1: TEdit
-    Left = 16
-    Top = 51
-    Width = 121
-    Height = 23
-    TabOrder = 1
-  end
-  object Edit2: TEdit
-    Left = 16
-    Top = 8
-    Width = 121
-    Height = 23
-    TabOrder = 2
+    OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 160
+    Left = 8
     Top = 47
-    Width = 145
-    Height = 25
-    Caption = 'New Form'
-    TabOrder = 3
-  end
-  object Memo1: TMemo
-    Left = 16
-    Top = 120
-    Width = 185
-    Height = 65
-    TabOrder = 4
-  end
-  object Button3: TButton
-    Left = 16
-    Top = 203
-    Width = 89
-    Height = 25
-    Caption = 'Show VALUES'
-    TabOrder = 5
-  end
-  object Button4: TButton
-    Left = 16
-    Top = 80
     Width = 75
     Height = 25
-    Caption = 'set Values'
-    TabOrder = 6
+    Caption = 'Set Values'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 398
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Show Values'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Memo1: TMemo
+    Left = 256
+    Top = 48
+    Width = 225
+    Height = 89
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 8
+    Top = 107
+    Width = 121
+    Height = 23
+    TabOrder = 4
+  end
+  object Edit2: TEdit
+    Left = 8
+    Top = 78
+    Width = 121
+    Height = 23
+    TabOrder = 5
   end
 end
