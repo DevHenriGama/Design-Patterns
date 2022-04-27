@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/04/27 11:22:26.084,=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/27 11:23:17.696,C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\ClientEx.dproj=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/04/27 11:25:25.843,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\uMainLogin.pas=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/04/27 11:25:25.843,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\uMainLogin.dfm=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/04/27 11:25:31.412,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\ClientEx.dproj=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\ClientEx.dproj</Transaction>
+    <Transaction>2022/04/27 11:25:58.871,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\Unit1.pas</Transaction>
+    <Transaction>2022/04/27 11:28:08.050,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\ILogin.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\Unit1.pas</Transaction>
+    <Transaction>2022/04/27 11:28:21.990,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\Interface_Login.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\ILogin.pas</Transaction>
+    <Transaction>2022/04/27 11:28:38.664,=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\Unit1.pas</Transaction>
+    <Transaction>2022/04/27 11:31:20.233,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\Classe_Login.pas=F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

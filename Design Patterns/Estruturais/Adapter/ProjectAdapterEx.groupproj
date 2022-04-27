@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CE344F1A-60B0-4264-886D-28AF99E3E299}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ServerAPIEx\ExAPI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ClientEx\ClientEx.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ExAPI">
+        <MSBuild Projects="ServerAPIEx\ExAPI.dproj"/>
+    </Target>
+    <Target Name="ExAPI:Clean">
+        <MSBuild Projects="ServerAPIEx\ExAPI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExAPI:Make">
+        <MSBuild Projects="ServerAPIEx\ExAPI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientEx">
+        <MSBuild Projects="ClientEx\ClientEx.dproj"/>
+    </Target>
+    <Target Name="ClientEx:Clean">
+        <MSBuild Projects="ClientEx\ClientEx.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientEx:Make">
+        <MSBuild Projects="ClientEx\ClientEx.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ExAPI;ClientEx"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ExAPI:Clean;ClientEx:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ExAPI:Make;ClientEx:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

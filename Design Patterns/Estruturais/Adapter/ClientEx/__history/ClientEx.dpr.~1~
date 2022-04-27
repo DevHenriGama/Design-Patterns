@@ -1,0 +1,14 @@
+program ClientEx;
+
+uses
+  Vcl.Forms,
+  uMainLogin in 'uMainLogin.pas' {uMainFormClient};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TuMainFormClient, uMainFormClient);
+  Application.Run;
+end.
