@@ -1,0 +1,17 @@
+program BridgePattern;
+
+uses
+  Vcl.Forms,
+  Bridge.MainForm in 'Bridge.MainForm.pas' {Form1},
+  Bridge.IDatabaseAbstraction in 'Bridge.IDatabaseAbstraction.pas',
+  Bridge.TRefinedAbstraction in 'Bridge.TRefinedAbstraction.pas',
+  Bridge.IImplementor in 'Bridge.IImplementor.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

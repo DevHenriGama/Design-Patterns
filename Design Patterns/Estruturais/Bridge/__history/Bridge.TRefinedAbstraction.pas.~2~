@@ -1,0 +1,33 @@
+unit Bridge.TRefinedAbstraction;
+
+interface
+
+uses Bridge.IDatabaseAbstraction;
+
+  type
+    TRefinedDatabase  = class(TInterfacedObject,IDatabaseAbstraction)
+    private
+       Implementor : IMPDatabase;
+    public
+      constructor Create( Database : IMPDatabase);
+      destructor Destroy;Override;
+      procedure Insert(Value : String);
+      function ShowData : String;
+    end;
+implementation
+
+
+
+{ TRefinedDatabase }
+
+procedure TRefinedDatabase.Insert(Value: String);
+begin
+
+end;
+
+function TRefinedDatabase.ShowData: String;
+begin
+
+end;
+
+end.

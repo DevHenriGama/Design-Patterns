@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions/>
+  <Transactions>
+    <Transaction>2022/04/27 11:25:40.217,F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ProjectAdapterEx.groupproj=C:\Users\Henrique\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
   <Default.Personality>
-    <Projects ActiveProject="F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ClientEx\ClientEx.dproj"/>
+    <Projects ActiveProject="F:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Adapter\ServerAPIEx\ExAPI.dproj"/>
   </Default.Personality>
 </BorlandProject>

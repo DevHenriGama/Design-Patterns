@@ -1,0 +1,14 @@
+unit Bridge.IDatabaseAbstraction;
+
+interface
+
+  type
+    IDatabaseAbstraction = interface
+      ['{FAC87118-4F46-4F42-AF66-177DADE020AA}']
+      procedure Insert;
+      function ShowData : String;
+    end;
+
+implementation
+
+end.

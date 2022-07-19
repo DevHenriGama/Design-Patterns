@@ -1,0 +1,43 @@
+unit Bridge.MainForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Bridge.IDatabaseAbstraction, Bridge.TRefinedAbstraction,
+  Bridge.ConcreteImplementorOne, Bridge.ConcreteImplementorTwo;
+
+type
+  TForm1 = class(TForm)
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    RadioGroup1: TRadioGroup;
+    Button4: TButton;
+    procedure RadioGroup1Click(Sender: TObject);
+  private
+    { Private declarations }
+    Database : IDatabaseAbstraction;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.RadioGroup1Click(Sender: TObject);
+begin
+ case RadioGroup1.ItemIndex of
+  0:Database := TRefinedDatabase.Create(TConcreteImp1.Create);
+  1:Database := TRefinedDatabase.Create(TConcreteImp2.Create);
+ end;
+end;
+
+end.

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/07/19 08:21:30.500,=C:\Users\darke\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 08:52:42.319,=C:\Users\darke\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/07/19 08:57:11.133,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.IDatabaseAbstraction.pas=C:\Users\darke\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/07/19 08:57:32.090,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.MainForm.dfm=C:\Users\darke\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/07/19 08:57:32.090,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.MainForm.pas=C:\Users\darke\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 08:57:38.503,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\BridgePattern.dproj=C:\Users\darke\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/07/19 08:57:50.067,=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:03:48.065,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.TRefinedAbstraction.pas=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:05:31.050,=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:06:27.980,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.IImplementor.pas=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:06:57.385,=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:08:52.179,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.ConcreteIMP1.pas=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:12:03.037,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.ConcreteImplementorOne.pas=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.ConcreteIMP1.pas</Transaction>
+    <Transaction>2022/07/19 09:12:24.432,=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+    <Transaction>2022/07/19 09:12:57.273,E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Bridge.ConcreteImplementorTwo.pas=E:\Progamação\Projects\Delphi\Estudos\Design-Patterns\Design Patterns\Estruturais\Bridge\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
